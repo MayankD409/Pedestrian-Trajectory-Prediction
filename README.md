@@ -179,29 +179,8 @@ The model demonstrates improved performance by incorporating robot trajectory in
 - Better handling of complex social dynamics
 - Robust performance across multiple benchmark datasets
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- ETH Pedestrian Dataset creators
-- ST-GCN implementation reference
-- PyTorch community for deep learning framework
-- TensorBoard for visualization tools
-
-## 📞 Contact
-
-For questions or issues, please open an issue in the repository or contact [your-email@example.com].
-
----
 
 **Note**: This project is part of research in pedestrian trajectory prediction and robot-human interaction modeling. 
