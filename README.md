@@ -2,7 +2,7 @@
 
 A deep learning framework for predicting pedestrian trajectories in crowded environments using Spatial-Temporal Graph Convolutional Networks (ST-GCNN) combined with robot trajectory information.
 
-## 🚀 Overview
+## Overview
 
 This project implements a novel approach to pedestrian trajectory prediction that combines:
 - **Spatial-Temporal Graph Convolutional Networks (ST-GCNN)** for modeling pedestrian social interactions
@@ -12,18 +12,7 @@ This project implements a novel approach to pedestrian trajectory prediction tha
 
 The model predicts future pedestrian trajectories by considering both social interactions among pedestrians and the influence of robot movements in the environment.
 
-## 📋 Features
-
-- **Multi-modal Architecture**: Combines graph neural networks with recurrent networks
-- **Robot-Aware Prediction**: Incorporates robot trajectory information to influence pedestrian behavior
-- **Social Interaction Modeling**: Uses graph structures to capture pedestrian-pedestrian interactions
-- **Probabilistic Outputs**: Generates trajectory distributions rather than deterministic paths
-- **Multiple Dataset Support**: Works with ETH, Hotel, University, Zara1, and Zara2 datasets
-- **Comprehensive Evaluation**: Includes ADE, FDE metrics and collision detection
-- **Visualization Tools**: Generates trajectory plots for analysis
-- **TensorBoard Integration**: Real-time training monitoring
-
-## 🏗️ Architecture
+## Architecture
 
 The model consists of three main components:
 
@@ -42,7 +31,7 @@ The model consists of three main components:
 - Generates future trajectory predictions
 - Outputs bivariate Gaussian parameters (μ, σ, ρ)
 
-## 📊 Datasets
+## Datasets
 
 The project supports multiple benchmark datasets:
 
@@ -66,7 +55,7 @@ cd Pedestrian-Trajectory-Prediction
 pip install torch torchvision numpy scipy matplotlib networkx tensorboardX tqdm
 ```
 
-## 📖 Usage
+## Usage
 
 ### Training
 
@@ -109,7 +98,7 @@ View training progress with TensorBoard:
 tensorboard --logdir=./checkpoint/[experiment_name]/logs
 ```
 
-## 📈 Metrics
+## Metrics
 
 The model is evaluated using standard trajectory prediction metrics:
 
@@ -117,7 +106,7 @@ The model is evaluated using standard trajectory prediction metrics:
 - **FDE (Final Displacement Error)**: L2 distance between predicted and ground truth final positions
 - **Collision Detection**: Analysis of potential robot-pedestrian collisions
 
-## 🔧 Model Configuration
+## Model Configuration
 
 ### Architecture Variants
 
@@ -154,32 +143,7 @@ Key hyperparameters can be tuned:
 └── README.md
 ```
 
-## 🎯 Key Components
-
-### Data Processing
-- **Graph Construction**: Builds spatial graphs from pedestrian positions
-- **Trajectory Normalization**: Converts absolute to relative coordinates
-- **Sequence Padding**: Handles variable-length trajectories
-- **Robot Integration**: Incorporates robot trajectory information
-
-### Loss Function
-- **Bivariate Gaussian Loss**: Models trajectory uncertainty
-- **Negative Log-Likelihood**: Probabilistic loss formulation
-- **Numerical Stability**: Includes epsilon clamping for training stability
-
-### Evaluation
-- **Multi-sample Prediction**: Generates multiple trajectory samples
-- **Best Sample Selection**: Chooses optimal prediction from samples
-- **Visualization**: Creates trajectory plots for analysis
-
-## 🔬 Experimental Results
-
-The model demonstrates improved performance by incorporating robot trajectory information:
-- Enhanced prediction accuracy in robot-pedestrian interaction scenarios
-- Better handling of complex social dynamics
-- Robust performance across multiple benchmark datasets
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
